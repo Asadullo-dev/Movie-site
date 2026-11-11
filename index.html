@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kino sayti</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tepa qism -->
+  <div class="navbar">
+    <h1 class="logo">KinoUz</h1>
+    <input type="text" id="search" placeholder="Kino qidirish...">
+    <a href="admin.html" class="admin-btn">Admin</a>
+  </div>
+
+  <!-- Katta rasm -->
+  <div class="hero" data-aos="fade-down">
+    <h2>Eng yaxshi kinolar</h2>
+    <p>Yaratuvchi: Asadullo Mirhamidullayev</p>
+  </div>
+
+  <div class="container">
+
+    <!-- Mashhur kinolar -->
+    <div class="title-row" data-aos="fade-right">
+      <h2>Mashhur kinolar</h2>
+      <button id="btnPopular" onclick="seeAllPopular()">Hammasini ko'rish</button>
+    </div>
+    <div class="movies" id="popularBox"></div>
+
+    <!-- Barcha kinolar -->
+    <div class="title-row" data-aos="fade-right">
+      <h2>Barcha kinolar</h2>
+      <button id="btnAll" onclick="seeAllMovies()">Hammasini ko'rish</button>
+    </div>
+    <div class="movies" id="allBox"></div>
+
+    </div>
+    <div class="movies" id="likedBox"></div>
+
+  </div>
+
+  <!-- Video oynasi -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <span class="close" onclick="closeMovie()">&times;</span>
+      <h2 id="movieTitle"></h2>
+      <p id="movieInfo"></p>
+      <video id="player" controls></video>
+      <iframe id="ytPlayer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen
+        style="display: none; width: 100%; height: 450px; margin-top: 25px; border: 0; border-radius: 5px;"></iframe>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>KinoUz - JS kursi loyihasi</p>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.8/dist/hls.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

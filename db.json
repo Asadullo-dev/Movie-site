@@ -1,0 +1,122 @@
+{
+  "movies": [
+    {
+      "id": "3",
+      "title": "Yulduzlar orasida",
+      "year": 2014,
+      "genre": "Fantastika",
+      "rating": 8.7,
+      "img": "https://picsum.photos/seed/kino3/300/450",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "title": "djfhd",
+      "year": 1993434,
+      "genre": "Dramadf",
+      "rating": 8.38,
+      "img": "https://picsum.photos/seed/kino4/300/450",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "title": "Kulgi kuni",
+      "year": 2019,
+      "genre": "Komediya",
+      "rating": 7.4,
+      "img": "https://picsum.photos/seed/kino5/300/450",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "id": "6",
+      "title": "Qorong'u tun",
+      "year": 2022,
+      "genre": "Triller",
+      "rating": 7.9,
+      "img": "https://picsum.photos/seed/kino6/300/450",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    {
+      "id": "7",
+      "title": "Sehrli o'rmon",
+      "year": 2023,
+      "genre": "Multfilm",
+      "rating": 8.1,
+      "img": "https://picsum.photos/seed/kino7/300/450",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "id": "8",
+      "title": "Tezlik 9",
+      "year": 2021,
+      "genre": "Jangari",
+      "rating": 6.8,
+      "img": "https://picsum.photos/seed/kino8/300/450",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    {
+      "id": "9",
+      "title": "Oxirgi xat",
+      "year": 2022,
+      "genre": "Drama",
+      "rating": 8,
+      "img": "https://picsum.photos/seed/kino9/300/450",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "id": "10",
+      "title": "Robot do'st",
+      "year": 2024,
+      "genre": "Fantastika",
+      "rating": 7.7,
+      "img": "https://picsum.photos/seed/kino10/300/450",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    {
+      "id": "11",
+      "title": "Yashirin iz",
+      "year": 2023,
+      "genre": "Triller",
+      "rating": 7.2,
+      "img": "https://picsum.photos/seed/kino11/300/450",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "id": "12",
+      "title": "Do'stlar safari",
+      "year": 2024,
+      "genre": "Komediya",
+      "rating": 7.6,
+      "img": "https://picsum.photos/seed/kino12/300/450",
+      "video": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    },
+    {
+      "title": "The Mentalist",
+      "year": 2008,
+      "genre": "Detavtive",
+      "rating": 8.7,
+      "img": "https://static.wikia.nocookie.net/cbs/images/2/20/The_Mentalist_poster.jpg/revision/latest?cb=20180603092747",
+      "video": "https://youtu.be/nMsUl5UkdCc?si=rrolOKSxy_v8uwcz",
+      "id": "v5aRnCbAlmM"
+    },
+    {
+      "title": "The Mentalist",
+      "year": 2008,
+      "genre": "Detactive",
+      "rating": 8.7,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6Gcvh9pyhwniEQZmulgvBWL97LBJc6ZvNyfZuYud4KXAoFe9gldYPd0&s=10",
+      "video": "https://youtu.be/nMsUl5UkdCc?si=rrolOKSxy_v8uwcz",
+      "id": "2JjCqbAyhuM"
+    },
+    {
+      "title": " Agar sen rentgen ko‘zli bo‘lsang-chi? Har bir kuchning bahosi bor ",
+      "year": 2026,
+      "genre": "Super Kuch",
+      "rating": 4.6,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwfVOz4mIXBDsfdo24tSXC-RTJyjEgeffSVZCAT6RTA&s=10",
+      "video": "https://youtu.be/Uq9SOVKj2U0?si=ogNH6sBJTLHJgiOJ",
+      "id": "GoIRgFNtMi0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

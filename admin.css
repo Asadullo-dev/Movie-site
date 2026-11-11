@@ -1,0 +1,98 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 350px;
+  background: #1b1b32;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-box h2 { text-align: center; margin-bottom: 5px; }
+
+input, textarea {
+  padding: 11px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #26263f;
+  color: #fff;
+  outline: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.login-box button, .form-btns button {
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #ff3d5a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.error { color: #ff6b6b; font-size: 13px; min-height: 16px; }
+.back { text-align: center; color: #aaa; font-size: 14px; }
+
+.admin-wrap {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #1b1b32;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form-btns { display: flex; gap: 10px; }
+.form-btns button { flex: 1; }
+#cancelBtn { background: #3a3a5c; }
+
+.table-box {
+  background: #1b1b32;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.table-box h2 { margin-bottom: 15px; }
+.table-scroll { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; min-width: 520px; }
+th, td { padding: 10px; text-align: left; border-bottom: 1px solid #2a2a45; font-size: 14px; }
+td img { width: 40px; height: 55px; object-fit: cover; border-radius: 5px; }
+
+.edit-btn, .del-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.edit-btn { background: #2f80ed; }
+.del-btn { background: #e03a3a; }
+
+@media (max-width: 900px) {
+  .admin-wrap { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .login-box { padding: 20px; }
+  .table-box, .movie-form { padding: 14px; }
+}

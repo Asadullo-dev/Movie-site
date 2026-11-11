@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a2e;
+  color: white;
+}
+
+/* Tepa qism */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #16213e;
+}
+
+.logo {
+  color: orange;
+}
+
+#search {
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.admin-btn {
+  color: white;
+  background: orange;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Katta rasm */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #0f3460;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Kinolar qismi */
+.container {
+  padding: 20px 30px;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 15px 0;
+}
+
+.title-row button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  cursor: pointer;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  background: #16213e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 8px 0 5px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 4px;
+}
+
+.like {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  background: black;
+  color: red;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #16213e;
+  margin-top: 40px;
+}
+
+/* ===== Admin sahifa ===== */
+.admin-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-page h2 {
+  margin: 20px 0 10px 0;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form button, .reset-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  cursor: pointer;
+}
+
+.movie-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #16213e;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.movie-row img {
+  width: 40px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.movie-row button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ===== Planshet ===== */
+@media (max-width: 900px) {
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== Telefon ===== */
+@media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .container {
+    padding: 10px 15px;
+  }
+
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+/* ===== Kichik telefon ===== */
+@media (max-width: 380px) {
+  .card img {
+    height: 160px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .title-row h2 {
+    font-size: 17px;
+  }
+}
+
+/* ===== Admin: login va tahrirlash tugmasi ===== */
+.login-box {
+  max-width: 320px;
+  margin: 80px auto;
+  padding: 25px;
+  background: #16213e;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  height: 20px;
+}
+
+.movie-row .edit-btn {
+  background: dodgerblue;
+}
+
+#cancelBtn {
+  background: gray;
+  color: white;
+  margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+  .movie-row {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+/* ===== Kino ko'rish oynasi ===== */
+.card img {
+  cursor: pointer;
+}
+
+.watch-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background: orange;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-box {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  background: #16213e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.modal-box video {
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 5px;
+  background: black;
+}
+
+.modal-box h2 {
+  margin: 10px 0 5px 0;
+}
+
+.close {
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  font-size: 30px;
+  cursor: pointer;
+}
